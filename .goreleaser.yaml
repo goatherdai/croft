@@ -1,6 +1,6 @@
 # GoReleaser — release-only pipeline for a Go library.
 #
-# croft ships no binaries: the module (github.com/buchenberg/goatherd-croft)
+# croft ships no binaries: the module (github.com/goatherdai/croft)
 # is consumed from source, and pkg.go.dev reads its version straight off the
 # git tag. So there is nothing to build, archive, or checksum — what GoReleaser
 # contributes here is the release *object*: validated tag, generated from the
@@ -41,5 +41,5 @@ release:
   footer: >-
     ---
 
-    Module: `github.com/buchenberg/goatherd-croft` — installed with
-    `go get github.com/buchenberg/goatherd-croft@{{ .Tag }}`.
+    Module: `github.com/goatherdai/croft` — installed with
+    `go get github.com/goatherdai/croft@{{ .Tag }}`.
